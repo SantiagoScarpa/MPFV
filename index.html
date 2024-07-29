@@ -42,20 +42,20 @@
                 flex flex-col p-2  max-w-2/3 w-full bg-skyblue text-blue font-bold
                 border border-blue rounded-lg">
                     <li class="">
-                        <a href="#"
+                        <a href=""
                             class="block py-2 px-3 md:bg-transparent md:text-white md:hover:text-white text-sand md:p-0 hover:text-sand bg-blue rounded-lg"
                             aria-current="page">Inicio</a>
                     </li>
                     <li>
-                        <a href="#"
-                            class="block py-2 px-3 md:border-0 md:p-0 md:hover:text-white md:hover:bg-transparent hover:text-sand hover:bg-blue rounded-lg">Nosotros</a>
-                    </li>
-                    <li>
-                        <a href="#"
+                        <a href="#servicios"
                             class="block py-2 px-3 md:border-0 md:p-0 md:hover:text-white md:hover:bg-transparent hover:text-sand hover:bg-blue rounded-lg">Servicios</a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="#nosotros"
+                            class="block py-2 px-3 md:border-0 md:p-0 md:hover:text-white md:hover:bg-transparent hover:text-sand hover:bg-blue rounded-lg">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html"
                             class="block py-2 px-3 md:border-0 md:p-0 md:hover:text-white md:hover:bg-transparent hover:text-sand hover:bg-blue rounded-lg">Contacto</a>
                     </li>
                 </ul>
@@ -64,11 +64,11 @@
         </div>
     </nav>
 
-    <div class="py-5">
-        <section class="py-5 ">
+    <div class="py-5 xl:w-[70%] lg:flex lg:flex-col lg:justify-center lg:mx-auto ">
+        <section class="py-5 md:py-8">
             <div class="w-full m-auto flex md:flex-row flex-col">
-                <div class="md:w-1/2 w-full">
-                    <img src="./Resources/Others/Fondos/arena.jpg" alt="" class="max-h-50">
+                <div class="md:w-1/2 w-0">
+                    <img src="./Resources/Others/Fondos/arena.jpg" alt="" class="md:h-[350px] md:w-[550px]">
                 </div>
                 <div class="md:w-1/2 flex-col flex w-full text-center self-center text-bone p-2">
                     <h1 class="text-xl">Inicio</h1>
@@ -82,10 +82,11 @@
             </div>
         </section>
 
-        <section class=" py-5 ">
-            <div class="w-full m-auto flex md:flex-row flex-col">
+        <section class="py-5 md:py-8" id="servicios">
+            <div class="w-full m-auto flex md:flex-row-reverse flex-col">
                 <div class="md:w-1/2 w-full">
-                    <img src="./Resources/Others/Fondos/arena.jpg" alt="" class="max-h-50">
+                    <img src="./Resources/imgs/Landing/pexels-pixabay-48148.jpg" alt=""
+                        class="md:h-[350px] md:w-[550px]">
                 </div>
                 <div class="md:w-1/2 flex-col flex w-full text-center self-center text-bone p-2">
                     <h1 class="text-xl">Servicios</h1>
@@ -98,10 +99,10 @@
                 </div>
             </div>
         </section>
-        <section class=" py-5  ">
+        <section class="py-5 md:py-8" id="nosotros">
             <div class="w-full m-auto flex md:flex-row flex-col">
                 <div class="md:w-1/2 w-full">
-                    <img src="./Resources/Others/Fondos/arena.jpg" alt="" class="max-h-50">
+                    <img src="./Resources/Others/Fondos/celeste.jpg" alt="" class="md:h-[350px] md:w-[550px]">
                 </div>
                 <div class="md:w-1/2 flex-col flex w-full text-center self-center text-bone p-2">
                     <h1 class="text-xl">Nosotros</h1>
@@ -116,15 +117,12 @@
         </section>
     </div>
 
+    <a aria-label="Chat on WhatsApp" href="https://wa.me/+59891793485"
+        class="flex justify-end fixed md:bottom-1 right-0 w-10 bottom-2 ">
+        <img alt="Chat on WhatsApp" src="./Resources/imgs/misc/WhatsApp.svg" class="" />
+    </a>
+    <script src="Resources/app.js">
 
-    <script>
-        const btnMenu = document.querySelector('#btnNav');
-        const navMenu = document.querySelector('#navbar-default')
-
-        btnMenu.addEventListener('click', () => {
-            navMenu.classList.toggle('collapse')
-            navMenu.classList.toggle('h-0')
-        })
     </script>
 
 

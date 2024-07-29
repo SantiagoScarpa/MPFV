@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MPFV</title>
+
+    <link rel="stylesheet" href="Tailwind/output.css">
+    <link rel="icon" href="./Resources/imgs/Isotipo/isotipo_azul.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+
+    <!-- npx tailwindcss -i ./mainStyle.css -o ./Tailwind/output.css --watch  -->
+</head>
+
+
+<body>
+    <nav class="sticky top-0 bg-blue w-full">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3">
+            <div class="text-center flex flex-wrap">
+                <div>
+                    <img src="./Resources/imgs/Imagotipo/Imagotipo_arena.png" alt="" class="h-20">
+                </div>
+
+            </div>
+
+            <button id="btnNav" data-collapse-toggle="navbar-default" type="button" class="transition-all inline-flex items-center p-2 w-10 h-10 justify-center text-sm
+                  rounded-lg md:hidden hover:bg-sand focus:outline-none 
+                 focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-secondary-color 
+                 dark:focus:ring-secondary-color" aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+
+
+            <div class="collapse md:visible w-full md:block md:w-auto md:h-auto flex items-start justify-end h-0 "
+                id="navbar-default">
+                <ul class=" md:text-sand md:font-medium md:p-0 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent
+                flex flex-col p-2  max-w-2/3 w-full bg-skyblue text-blue font-bold
+                border border-blue rounded-lg">
+                    <li class="">
+                        <a href="index.html"
+                            class="block py-2 px-3 md:border-0 md:p-0 md:hover:text-white md:hover:bg-transparent hover:text-sand hover:bg-blue rounded-lg"
+                            aria-current="page">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="index.html#servicios"
+                            class="block py-2 px-3 md:border-0 md:p-0 md:hover:text-white md:hover:bg-transparent hover:text-sand hover:bg-blue rounded-lg">Servicios</a>
+                    </li>
+                    <li>
+                        <a href="index.html#nosotros"
+                            class="block py-2 px-3 md:border-0 md:p-0 md:hover:text-white md:hover:bg-transparent hover:text-sand hover:bg-blue rounded-lg">Nostros</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-3 md:bg-transparent md:text-white md:hover:text-white text-sand md:p-0 hover:text-sand bg-blue rounded-lg
+                            ">Contacto</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="mt-5">
+        <div class="text-bone flex justify-center flex-col m-2">
+            <h1 class="text-xl text-center underline">Contactanos</h1>
+            <p class="text-lg text-center">Puedes contactarnos por WhatsApp en el siguiente enlace o
+                escribiendonos a
+                <span class="block">091 999 999</span> <span class="block">Fb: Facebook.com</span>
+            </p>
+
+            <a aria-label="Chat on WhatsApp" href="https://wa.me/+59891793485" class="flex justify-center mt-3">
+                <img alt="Chat on WhatsApp" src="./Resources/imgs/misc/WhatsAppButtonGreenLarge.svg"
+                    class="max-h-[50px]" />
+            </a>
+            </a>
+        </div>
+    </section>
+
+    <script src="Resources/app.js">
+
+    </script>
+</body>
+
+</html>
