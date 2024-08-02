@@ -5,3 +5,4 @@ btnMenu.addEventListener('click', () => {
     navMenu.classList.toggle('collapse')
     navMenu.classList.toggle('h-0')
 })
+
